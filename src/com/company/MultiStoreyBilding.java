@@ -3,28 +3,40 @@ package com.company;
 import java.util.ArrayList;
 
 public class MultiStoreyBilding implements Main.House {
-    ArrayList Flat = new ArrayList();
-    MultiStoreyBilding(){
-        Flat.add(1);
-        Flat.add(2);
-        Flat.add(3);
-        Flat.add(4);
-        Flat.add(5);
-        Flat.add(6);
-        Flat.add(7);
-        Flat.add(9);
-    }
-    @Override
-    public double getSquare() {
-        for (int i = 0; i < Flat.size(); i++)  {
-            System.out.println(i);
-        }
-        return 0;
-    }
+	ArrayList<Flat> flats = new ArrayList<>();
 
-    @Override
-    public boolean isOrdinal() {
-        return false;
+	MultiStoreyBilding() {
+		Flat flat1 = new Flat();
+		flat1.setApartmentNumber(1);
 
-    }
+		Flat flat2 = new Flat();
+		flat2.setApartmentNumber(2);
+
+//        flats.add(1);
+//        flats.add(2);
+//        flats.add(3);
+//        flats.add(4);
+//        flats.add(5);
+//        flats.add(6);
+//        flats.add(7);
+//        flats.add(9);
+	}
+
+	@Override
+	public double getSquare() {
+		int square = 0;
+		for (Flat flat : flats) {
+			ArrayList<Room> rooms = flat.getRooms();
+			for (Room room : rooms) {
+				square = +room.area();
+			}
+		}
+		return square;
+	}
+
+	@Override
+	public boolean isOrdinal() {
+		return false;
+
+	}
 }
