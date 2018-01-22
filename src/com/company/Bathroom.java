@@ -6,6 +6,7 @@ public class Bathroom extends Room {
     private String washbasin;
 
     public String getBath() {
+
         return bath;
     }
 

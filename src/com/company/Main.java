@@ -3,13 +3,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        MultiStoreyBilding multiStoreyBilding = new MultiStoreyBilding();
+        MultiStoreyBuilding multiStoreyBuilding = new MultiStoreyBuilding();
+        OrdinaryHouse ordinaryHouse = new OrdinaryHouse();
 
-        System.out.println("musddsfds" +multiStoreyBilding.getSquare());
-    }
-    //todo separate class
-    public interface House{
-        double getSquare();
-        boolean isOrdinal();
+        System.out.println("Square ordinaryHouse: " + ordinaryHouse.getSquare());
+        System.out.println("Is ordinal ordinaryHouse: " + ordinaryHouse.isOrdinal());
+        System.out.println("Square multiStoreyBuilding: " +multiStoreyBuilding.getSquare());
+        System.out.println("Is ordinal multiStoreyBuilding: " +multiStoreyBuilding.isOrdinal());
     }
 }

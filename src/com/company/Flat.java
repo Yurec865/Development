@@ -7,15 +7,28 @@ public class Flat {
     private ArrayList<Room> room = new ArrayList<>();
     Flat(){
         Bathroom bathroom = new Bathroom();
-        bathroom.length = 10;
+        bathroom.length = 25;
         bathroom.width = 20;
         bathroom.setBath("bath");
         bathroom.setToilet("toilet");
-        bathroom.setWashbasin("was");
+        bathroom.setWashbasin("washbasin");
         room.add(bathroom);
-//todo the same for other
-        room.add(new Kitchen());
-        room.add(new Hallway());
+
+        Kitchen kitchen = new Kitchen();
+        kitchen.length = 5;
+        kitchen.width = 10;
+        kitchen.setDishwasher("dishwasher");
+        kitchen.setFridge("fridge");
+        kitchen.setMicrowaveOven("microwaveOven");
+        room.add(kitchen);
+
+        Hallway hallway = new Hallway();
+        hallway.length = 30;
+        hallway.width = 10;
+        hallway.setSofa("sofa");
+        hallway.setTable("table");
+        hallway.setWardrobe("wardrobe");
+        room.add(hallway);
     }
 
     public int getApartmentNumber() {
