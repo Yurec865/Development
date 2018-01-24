@@ -26,7 +26,15 @@ public class MultiStoreyBuilding implements House {
 		flat5.setApartmentNumber(5);
 		flats.add(flat5);
 	}
-
+	public int outputNumber() {
+		for(Flat flat : flats) {
+			double square = getSquare();
+			if (square > 40){
+				System.out.println("Flat square > 40 : " + flat.getApartmentNumber());
+			}
+			}
+		return 0;
+	}
 	@Override
 	public double getSquare() {
 		int square = 0;
@@ -34,22 +42,18 @@ public class MultiStoreyBuilding implements House {
 			ArrayList<Room> rooms = flat.getRooms();
 			for (Room room : rooms) {
 				square = + room.area();
-
 			}
 		}
 		return square;
 	}
-
 	@Override
 	public boolean isOrdinal() {
 		return false;
 
 	}
-
 	public ArrayList<Flat> getFlats() {
 		return flats;
 	}
-
 	public void setFlats(ArrayList<Flat> flats) {
 		this.flats = flats;
 	}
