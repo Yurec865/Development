@@ -37,7 +37,7 @@ public class OrdinaryHouse implements House {
     public double getSquare() {
         int square = 0;
         for (Room room : room2) {
-            square = + room.area();
+            square += room.area();
         }
 		return square;
     }

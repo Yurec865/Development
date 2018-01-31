@@ -1,11 +1,19 @@
-package com.company;
+package exercise2;
 
 public class Car{
     private int numbersOfDoors;
     private double engineCapacity;
+    private String name;
 
+	public String getName() {
+		return name;
+	}
 
-    public int getNumbersOfDoors() {
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getNumbersOfDoors() {
         return numbersOfDoors;
     }
 

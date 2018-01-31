@@ -1,4 +1,4 @@
-package com.company;
+package exercise1;
 
 import java.util.*;
 
@@ -17,7 +17,7 @@ public class Main {
             linkedList.add("Ryzhik");
             System.out.println("LinkedList : " + linkedList);
 
-            Map<String, Integer> hashMap = new HashMap<String, Integer>();
+            Map<String, Integer> hashMap = new HashMap<>();
             hashMap.put("Yura", 1);
             hashMap.put("Dima", 2);
             hashMap.put("Kolya", 3);
