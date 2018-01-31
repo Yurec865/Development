@@ -35,6 +35,8 @@ public class Main {
             countryHashSet.add("Польша");
             System.out.println("HashSet : " + countryHashSet);
 
+//            make some changes
+
             SortedSet<Integer> numberSet = new TreeSet<>();
             numberSet.add(1);
             numberSet.add(89);
