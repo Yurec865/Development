@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Comparator;
 import java.util.TreeSet;
 
 public class Main {
@@ -16,5 +17,6 @@ public class Main {
         car2.setNumbersOfDoors(4);
         car2.setEngineCapacity(2.3);
         cars.add(car2);
+        System.out.println(cars);
     }
 }
