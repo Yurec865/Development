@@ -1,10 +1,10 @@
-package exercise3;
+package com.company;
 
 
 public class History {
+
     private String operation;
     private int date;
-    private String name;
 
     public String getOperation() {
         return operation;
@@ -20,14 +20,6 @@ public class History {
 
     public void setDate(int date) {
         this.date = date;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
 
